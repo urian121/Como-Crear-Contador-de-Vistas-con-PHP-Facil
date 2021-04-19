@@ -10,6 +10,16 @@
 	<link rel="stylesheet" type="text/css" href="css/cargando.css">
 </head>
   <style>
+  	span{
+  		width: 100%;
+  		padding: 15px 25px;
+  		border-radius: 5px;
+  		font-weight: 900;
+  		font-size: 60px;
+  		text-align: center;
+  		color: green;
+  		background-color: #cecece;
+  	}
       h3{
           font-size: 35px;
           font-weight: 900;
@@ -46,7 +56,7 @@
 
 
 <h3 class="text-center">
-	Cómo un Crear Contador de Vistas usando PHP de forma Fácil
+	Cómo Crear un Contador de Vistas usando PHP de forma Fácil
 </h3>
 <hr>
 
@@ -54,6 +64,10 @@
 <?php
 if (file_exists('sumandoVista.php'))  //Verifico si existe este archivo 
 $variableArchivo = fopen('sumandoVista.php','r+'); //si es archivo existe lo habro 
+
+//$var1 = fopen('sumandoVista.txt','r+'); 
+//$var2 = fopen('sumandoVista.html','r+'); 
+
 else $variableArchivo = fopen('sumandoVista.php','w+'); //de lo contrario creo el archivo 
 $leerArchivo = fgets($variableArchivo,20);  //luego de estar creado, leo el archivo
 if ($leerArchivo == '')  //Valido la variable leerArchivo cuando esta vacia 
@@ -64,8 +78,14 @@ fclose($variableArchivo);  //cerramos el archivo
 
 ?>
 
-<h4>N&uacute;meros de Vistas</h4><h5><?php echo $leerArchivo; ?></h5> 
 
+ <div class="row text-center">
+    <div class="col-12 col-md-12">
+    	<span>
+			<?php echo $leerArchivo; ?>
+		</span>
+    </div>
+  </div>
 
 
 </div>
