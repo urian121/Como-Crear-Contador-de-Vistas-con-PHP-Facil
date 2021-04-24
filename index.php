@@ -61,16 +61,16 @@
 
 
 <?php
-if (file_exists('sumandoVista.php'))  //Verifico si existe este archivo 
-$variableArchivo = fopen('sumandoVista.php','r+'); //si es archivo existe lo habro 
+if (file_exists('sumandoVista.html'))  //Verifico si existe este archivo 
+$variableArchivo = fopen('sumandoVista.html','r+'); //si es archivo existe lo habro 
 
 //$var1 = fopen('sumandoVista.txt','r+'); 
 //$var2 = fopen('sumandoVista.html','r+'); 
 
-else $variableArchivo = fopen('sumandoVista.php','w+'); //de lo contrario creo el archivo 
+else $variableArchivo = fopen('sumandoVista.html','w+'); //de lo contrario creo el archivo 
 $leerArchivo = fgets($variableArchivo,20);  //luego de estar creado, leo el archivo y obtengo una línea desde el puntero de un archivo
 if ($leerArchivo == '')  //Valido la variable leerArchivo cuando esta vacia 
-$leerArchivo = "0";  //Inicio el conteo desde cero 
+$leerArchivo = "10";  //Inicio el conteo desde cero 
 rewind($variableArchivo);  //ponemos el puntero al inicio del archivo 
 fputs($variableArchivo,++$leerArchivo);  //escribimos la linea leída mientras le aumentamos en uno 
 fclose($variableArchivo);  //cerramos el archivo 
