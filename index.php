@@ -6,7 +6,6 @@
 	<link type="text/css" rel="shortcut icon" href="img/logo-mywebsite-urian-viera.svg"/>
 	<title>Como-Crear-Contador-de-Vistas-con-PHP-Facil: Urian Viera</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/maquinawrite.css">
 	<link rel="stylesheet" type="text/css" href="css/cargando.css">
 </head>
   <style>
@@ -17,8 +16,8 @@
   		font-weight: 900;
   		font-size: 60px;
   		text-align: center;
-  		color: green;
-  		background-color: #cecece;
+  		color: #fff;
+  		background-color: #ff6a00;
   	}
       h3{
           font-size: 35px;
@@ -44,8 +43,8 @@
         </a>
       </li>
     </ul>
-    <div class="my-2 my-lg-0" id="maquinaescribir">
-      <h5 class="navbar-brand">Web Developer Urian Viera <span>&#160;</span></h5>
+    <div class="my-2 my-lg-0">
+      <h5 class="navbar-brand">Web Developer Urian Viera</h5>
     </div>
 </nav>
 
@@ -69,7 +68,7 @@ $variableArchivo = fopen('sumandoVista.php','r+'); //si es archivo existe lo hab
 //$var2 = fopen('sumandoVista.html','r+'); 
 
 else $variableArchivo = fopen('sumandoVista.php','w+'); //de lo contrario creo el archivo 
-$leerArchivo = fgets($variableArchivo,20);  //luego de estar creado, leo el archivo
+$leerArchivo = fgets($variableArchivo,20);  //luego de estar creado, leo el archivo y obtengo una línea desde el puntero de un archivo
 if ($leerArchivo == '')  //Valido la variable leerArchivo cuando esta vacia 
 $leerArchivo = "0";  //Inicio el conteo desde cero 
 rewind($variableArchivo);  //ponemos el puntero al inicio del archivo 
