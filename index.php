@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link type="text/css" rel="shortcut icon" href="img/logo-mywebsite-urian-viera.svg"/>
-	<title>Como-Crear-Contador-de-Vistas-con-PHP-Facil: Urian Viera</title>
+	<title>Como-Crear-Contador-de-Vistas-con-PHP-Fácil: Urian Viera</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/cargando.css">
 </head>
